@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Employee Data Management</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+	<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="jumbotron text-center" id="title"><h3>Employee Data Management</h3><p>A Comprehensive Directory of Employee Billable Hours</p></div>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="card">
+					<div class="card-header">Current Employees</div>
+					<div class="card-body">
+						<table class="table">
+							<thead>
+								<tr>
+									<th scope="col">Employee Name</th>
+									<th scope="col">Role</th>
+									<th scope="col">Start Date</th>
+									<th scope="col">Months Worked</th>
+									<th scope="col">Monthly Rate $</th>
+									<th scope="col">Total Billed $</th>
+									<th scope="col">Remove Employee</th>
+								</tr>
+							</thead>
+							<tbody class="awesomeTbody">
+								<tr>
+									<td>Ida</td>
+									<td>Awesome Direction</td>
+									<td>8/23/1983</td>
+									<td>408</td>
+									<td>1,000,000</td>
+									<td>50,000,000</td>
+									<td></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<div class="row mt-4">
+			<div class="col-md-12">
+				<div class="card">
+					<div class="card-header">Add Employee</div>
+					<div class="card-body">
+						<form>
+							<div class="form-group">
+								<label for="employeeNameInput">Employee Name</label>
+								<input type="input" class="form-control" id="employeeNameInput" aria-describedby="emailHelp" placeholder="Enter name">
+							</div>
+							<div class="form-group">
+								<label for="employeeRole">Role</label>
+								<input type="input" class="form-control" id="employeeRoleInput" placeholder="Enter role">
+							</div>
+							<div class="form-group">
+								<label for="employeeStartInput">Start Date (DD/MM/YY - ex:01/01/89)</label>
+								<input type="input" class="form-control" id="employeeStartInput">
+
+							</div>
+							<div class="form-group">
+								<label for="employeeRateInput">Monthly Rate</label>
+								<input type="input" class="form-control" id="employeeRateInput">
+
+							</div>
+							<button type="submit" class="btn btn-primary" id="submitEmployee">Submit</button>
+						</form>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+	</div>
+
+	<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+	 <script src="https://code.jquery.com/jquery.js"></script>
+	 <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+	<script src="assets/javascript/logic.js"></script>
+</body>
